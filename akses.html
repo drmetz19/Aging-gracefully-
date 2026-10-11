@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#F6EFE4">
+<title>Akses Aging Gracefully</title>
+<meta name="description" content="Halaman akses eBook interaktif Gracefully Aging: Beautycode Biohacking — dr. Metz.">
+<meta property="og:title" content="Gracefully Aging Blueprint — dr. Metz">
+<meta property="og:image" content="img/p001_000.webp">
+<script>try{var t=localStorage.getItem('gab:theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<!-- Meta Pixel: Aging Gracefully -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2472150893185263');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2472150893185263&ev=PageView&noscript=1"></noscript>
+<!-- Konektor Tracking Code (WS-YPP3BO) -->
+<script>
+!function(w,d,t,u,k,a,m){w['KonektorObject']=k;w[k]=w[k]||function(){
+(w[k].q=w[k].q||[]).push(arguments)},w[k].l=1*new Date();a=d.createElement(t),
+m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+}(window,document,'script','https://cdn.konektor.id/tracker.min.js','konektor');
+konektor('init','WS-YPP3BO',{domains:[location.hostname,'konektor.id','awetmuda-10-tahun.myscalev.com','aginggracefully.site','www.aginggracefully.online','10tahunlebihmuda.online']});
+konektor('track','PageView');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --paper:#F6EFE4; --paper-2:#EFE4D3; --ink:#2E241B; --ink-soft:#6A5949;
+  --bark:#6B4A2E; --bark-deep:#4A3220; --sand:#C9A77C; --line:#E0D2BD; --card:#FBF7F0; --on-bark:#FBF5EC;
+  --wa:#1F8A4C; --wa-ink:#fff;
+  --display:"DM Serif Display",Georgia,"Times New Roman",serif;
+  --body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --measure:40rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1E1813; --paper-2:#28201A; --ink:#EDE3D5; --ink-soft:#B8A894; --bark:#D2A877; --bark-deep:#E6C59C;
+  --sand:#8F7150; --line:#3A2F25; --card:#251E18; --on-bark:#1E1813; --wa:#4CC27E; --wa-ink:#0F2A1A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#1E1813; --paper-2:#28201A; --ink:#EDE3D5; --ink-soft:#B8A894; --bark:#D2A877; --bark-deep:#E6C59C;
+  --sand:#8F7150; --line:#3A2F25; --card:#251E18; --on-bark:#1E1813; --wa:#4CC27E; --wa-ink:#0F2A1A; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--bark)}
+:focus-visible{outline:2px solid var(--bark);outline-offset:3px;border-radius:4px}
+.topbar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;max-width:64rem;margin:0 auto}
+.brand{font-family:var(--display);font-style:italic;font-size:1.15rem;color:var(--bark-deep);text-decoration:none;flex:1;white-space:nowrap}
+.tb-btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;border:1px solid var(--line);background:var(--card);color:var(--ink);font:500 .82rem var(--body);padding:.45rem .8rem;border-radius:999px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.tb-btn.accent{background:var(--bark);color:var(--on-bark);border-color:var(--bark)}
+.tb-icon{width:2.15rem;height:2.15rem;padding:0}
+.tb-icon svg{width:1.05rem;height:1.05rem}
+main{padding:0 1rem 4rem}
+.col{max-width:var(--measure);margin:0 auto}
+.wide{max-width:56rem;margin:0 auto}
+.hero{display:grid;gap:1.6rem;align-items:center;padding:2.2rem 0 1rem}
+.hero img{width:100%;max-width:17rem;height:auto;aspect-ratio:900/1278;border-radius:6px;box-shadow:0 18px 40px -18px rgba(60,35,15,.45);justify-self:center}
+@media (min-width:760px){.hero{grid-template-columns:15rem 1fr}}
+.by{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--bark)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,7vw,3.2rem);line-height:1.05;margin:.3rem 0 .6rem;color:var(--bark-deep);text-wrap:balance}
+h1 em{display:block}
+.lead{color:var(--ink-soft);margin:0 0 1.2rem}
+.actions{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--bark);color:var(--on-bark);text-decoration:none;font:600 .95rem var(--body);padding:.8rem 1.25rem;border-radius:999px;border:0;cursor:pointer;line-height:1.3}
+.btn:hover{background:var(--bark-deep)}
+.btn-ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{background:var(--paper-2)}
+.btn-wa{background:var(--wa);color:var(--wa-ink);width:100%;font-size:1rem;padding:.95rem 1.2rem}
+.btn-wa:hover{filter:brightness(.95);background:var(--wa)}
+.btn-wa:disabled{opacity:.5;cursor:not-allowed}
+.btn svg{width:1.15rem;height:1.15rem;flex:none}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(1.55rem,4.8vw,2rem);line-height:1.15;color:var(--bark-deep);margin:3.2rem 0 .4rem;text-wrap:balance}
+.sub{color:var(--ink-soft);margin:0 0 1.2rem}
+.kicker{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bark);font-weight:600}
+.disclaimer{font-size:.8rem;line-height:1.6;color:var(--ink-soft);border:1px dashed var(--sand);border-radius:10px;padding:.8rem 1rem;margin:1.2rem 0}
+/* isi buku */
+.toc{display:grid;gap:.5rem;counter-reset:c}
+.toc a{display:grid;grid-template-columns:2.4rem 1fr auto;gap:.6rem;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.75rem .9rem}
+.toc a:hover{border-color:var(--bark)}
+.toc b{font-family:var(--display);font-weight:400;font-size:1.3rem;color:var(--sand);text-align:center}
+.toc span{font-size:.92rem;line-height:1.35}
+.toc span small{display:block;color:var(--ink-soft);font-size:.76rem}
+.toc i{font-style:normal;color:var(--bark);font-size:.9rem}
+.tools{display:grid;gap:.6rem;margin-top:.8rem}
+@media (min-width:640px){.tools{grid-template-columns:1fr 1fr}}
+.tool{display:block;text-decoration:none;color:var(--ink);background:var(--paper-2);border-radius:14px;padding:1rem 1.1rem;border-left:3px solid var(--bark)}
+.tool b{display:block;font-family:var(--display);font-weight:400;font-size:1.2rem;color:var(--bark-deep)}
+.tool small{color:var(--ink-soft);font-size:.82rem;line-height:1.45;display:block;margin-top:.2rem}
+/* form Nara */
+.nara{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.4rem 1.2rem;margin:3rem 0 0}
+.nara-head{display:flex;gap:.9rem;align-items:center;margin-bottom:.8rem}
+.ava{width:3.2rem;height:3.2rem;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--bark);color:var(--on-bark);font-family:var(--display);font-size:1.4rem}
+.nara h2{margin:.1rem 0 0;font-size:1.6rem}
+.nara p{margin:0 0 1rem;color:var(--ink-soft);font-size:.93rem}
+.field{display:grid;gap:.35rem;margin-bottom:1rem}
+.field label,.field legend{font-weight:600;font-size:.9rem;padding:0}
+fieldset.field{border:0;margin:0 0 1rem;padding:0}
+input[type=text]{font:inherit;font-size:1rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.7rem .85rem;width:100%}
+input[type=text]:focus{outline:2px solid var(--bark);outline-offset:1px;border-color:var(--bark)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chip span{display:inline-block;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:.45rem .85rem;font-size:.86rem;cursor:pointer;line-height:1.3}
+.chip input:checked + span{background:var(--bark);color:var(--on-bark);border-color:var(--bark)}
+.chip input:focus-visible + span{outline:2px solid var(--bark);outline-offset:2px}
+.err{color:#B3402F;font-size:.8rem;min-height:1em}
+:root[data-theme="dark"] .err{color:#F08A78}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .err{color:#F08A78}}
+.privacy{font-size:.76rem!important;color:var(--ink-soft);margin:.7rem 0 0!important;line-height:1.5}
+/* rak produk */
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.7rem}
+.shelf a{display:grid;gap:.25rem;align-content:start;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.05rem}
+.shelf a:hover{border-color:var(--bark)}
+.shelf a.hl{background:var(--bark-deep);border-color:var(--bark-deep);color:var(--on-bark)}
+.shelf a.hl small,.shelf a.hl .tag{color:var(--on-bark)}
+.shelf b{font-size:1rem;line-height:1.3}
+.shelf small{color:var(--ink-soft);font-size:.82rem;line-height:1.45}
+.tag{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--bark)}
+.tag.free{color:var(--wa)}
+.shelf .go{margin-top:.4rem;font-weight:600;font-size:.85rem;color:var(--bark)}
+.shelf a.hl .go{color:var(--on-bark)}
+footer{max-width:var(--measure);margin:3rem auto 0;text-align:center;font-size:.8rem;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">Gracefully Aging</a>
+    <button class="tb-btn tb-icon" id="themeBtn" type="button" aria-label="Ganti mode terang/gelap"></button>
+    <a class="tb-btn accent" href="./" data-go="ebook">Buka eBook</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wide">
+    <section class="hero">
+      <img src="img/p001_000.webp" alt="Sampul eBook Anti Aging Gracefully Blueprint karya dr. Metz" width="900" height="1278">
+      <div>
+        <div class="by">dr. Metz · Gracefully Aging Series · Buku 1</div>
+        <h1>Selamat datang di <em>Gracefully Aging</em></h1>
+        <p class="lead"><strong>Beautycode Biohacking</strong> versi interaktif — baca di HP, cek kualitas tidurmu, dan centang program 12 minggu langsung di halaman buku.</p>
+        <div class="actions">
+          <a class="btn" href="./" data-go="ebook">📖 Buka eBook Interaktif</a>
+          <a class="btn btn-ghost" href="#nara">💬 Tanya Nara di WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="col">
+    <p class="disclaimer"><strong>Catatan kesehatan:</strong> Isi eBook dan jawaban asisten bersifat edukasi, bukan diagnosis atau resep pribadi. Jika kamu punya kondisi medis, sedang hamil/menyusui, atau rutin minum obat, konsultasikan dulu dengan dokter sebelum mengubah pola makan, puasa, olahraga, atau perawatan.</p>
+
+    <h2>Isi buku</h2>
+    <p class="sub">Ketuk bab mana pun untuk langsung membacanya.</p>
+    <nav class="toc" aria-label="Bab eBook">
+      <a href="./#pengantar" data-go="ebook"><b>·</b><span>Pengantar<small>Kata Pengantar · Jejak Awal · Testimoni</small></span><i>→</i></a>
+      <a href="./#bab-01" data-go="ebook"><b>01</b><span>Kebangkitan: Ketika Usia Mengusik<small>Pilar pertama: tidur</small></span><i>→</i></a>
+      <a href="./#bab-02" data-go="ebook"><b>02</b><span>Pertengkaran di Meja Sarapan<small>Hormon, tidur & emosi</small></span><i>→</i></a>
+      <a href="./#bab-03" data-go="ebook"><b>03</b><span>Aku Tak Lagi Seperti Dulu<small>Konsultasi pertama</small></span><i>→</i></a>
+      <a href="./#bab-04" data-go="ebook"><b>04</b><span>Menyatukan Benang Merah<small>4 body type dalam Beauty Code</small></span><i>→</i></a>
+      <a href="./#bab-05a" data-go="ebook"><b>I</b><span>Restart Kehidupan<small>Minggu 1–4</small></span><i>→</i></a>
+      <a href="./#bab-05b" data-go="ebook"><b>II</b><span>Recharge Kehidupan<small>Minggu 5–8</small></span><i>→</i></a>
+      <a href="./#bab-05c" data-go="ebook"><b>III</b><span>Rejuvenate: Dari Dalam ke Luar<small>Minggu 9–12</small></span><i>→</i></a>
+    </nav>
+
+    <div class="tools">
+      <a class="tool" href="./#kuis" data-go="ebook"><span class="kicker">Alat bantu</span><b>Cek Kualitas Tidur</b><small>10 pertanyaan, skor langsung keluar.</small></a>
+      <a class="tool" href="./#tracker-12" data-go="ebook"><span class="kicker">Alat bantu</span><b>Tracker 12 Minggu</b><small>Centang Power of 3 Action tiap minggu.</small></a>
+    </div>
+
+    <section class="nara" id="nara" aria-labelledby="naraTitle">
+      <div class="nara-head">
+        <div class="ava" aria-hidden="true">N</div>
+        <div><span class="kicker">Asisten AI dr. Metz · WhatsApp</span><h2 id="naraTitle">Ngobrol dengan Nara</h2></div>
+      </div>
+      <p>Isi singkat di bawah, lalu kamu langsung tersambung ke Nara di WhatsApp. Nara bantu kamu mulai dari bab yang paling pas dan menjawab pertanyaan seputar program 12 minggu.</p>
+      <form id="naraForm" novalidate>
+        <div class="field">
+          <label for="fNama">Nama panggilan</label>
+          <input type="text" id="fNama" name="nama" autocomplete="given-name" maxlength="40" placeholder="mis. Rina">
+          <div class="err" id="eNama" aria-live="polite"></div>
+        </div>
+        <fieldset class="field">
+          <legend>Yang paling ingin kamu perbaiki dulu</legend>
+          <div class="chips" id="fFokus">
+            <label class="chip"><input type="radio" name="fokus" value="tidur"><span>😴 Tidur</span></label>
+            <label class="chip"><input type="radio" name="fokus" value="berat_badan"><span>⚖️ Berat badan / perut</span></label>
+            <label class="chip"><input type="radio" name="fokus" value="kulit"><span>✨ Kulit kusam</span></label>
+            <label class="chip"><input type="radio" name="fokus" value="energi"><span>⚡ Energi & stres</span></label>
+            <label class="chip"><input type="radio" name="fokus" value="hormon"><span>🌙 Hormon</span></label>
+          </div>
+          <div class="err" id="eFokus" aria-live="polite"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Usia</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="usia" value="<30"><span>&lt; 30</span></label>
+            <label class="chip"><input type="radio" name="usia" value="30-39"><span>30–39</span></label>
+            <label class="chip"><input type="radio" name="usia" value="40-49"><span>40–49</span></label>
+            <label class="chip"><input type="radio" name="usia" value="50+"><span>50+</span></label>
+          </div>
+        </fieldset>
+        <button class="btn btn-wa" type="submit" id="naraBtn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.7 2.6 4.1 3.6 1.5.7 2.1.7 2.9.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>Lanjut ke WhatsApp Nara</button>
+        <p class="privacy">Setelah tombol diketuk, WhatsApp terbuka dengan pesan yang sudah terisi — tinggal kirim. Jawaban kamu di atas dipakai Nara supaya obrolan langsung nyambung. Nara asisten AI, bukan pengganti pemeriksaan dokter.</p>
+      </form>
+    </section>
+
+    <h2>Lanjutkan perjalananmu</h2>
+    <p class="sub">Semua program Aging Gracefully by dr. Metz — dari yang gratis sampai pendampingan.</p>
+  </div>
+  <div class="wide">
+    <div class="shelf">
+      <a href="https://www.aginggracefully.online" target="_blank" rel="noopener" data-cta="tracker"><span class="tag free">Gratis</span><b>BeautyCode Tracker</b><small>Catat kondisi harian & cek body type-mu.</small><span class="go">Buka tracker →</span></a>
+      <a href="https://awetmuda-10-tahun.myscalev.com/p/body-type-mapping" target="_blank" rel="noopener" data-cta="ebook2"><span class="tag">Buku 2 · Rp99rb</span><b>Body Type Mapping</b><small>Peta 4 body type, 12 kombinasi dominan–sekunder, kuis & tracker 30 hari.</small><span class="go">Lihat Buku 2 →</span></a>
+      <a href="https://awetmuda-10-tahun.myscalev.com/webinaraging12x" target="_blank" rel="noopener" data-cta="webinar"><span class="tag">Rp149rb</span><b>Webinar 12x</b><small>Gracefully Aging System bareng dr. Metz — Body Type OS sampai sistem personal.</small><span class="go">Ikut webinar →</span></a>
+      <a href="https://awetmuda-10-tahun.myscalev.com/chalenge14days" target="_blank" rel="noopener" data-cta="challenge"><span class="tag">Rp149rb</span><b>Challenge 14 Hari</b><small>Tracking harian, evaluasi, guided support & komunitas.</small><span class="go">Gabung challenge →</span></a>
+      <a class="hl" href="https://awetmuda-10-tahun.myscalev.com/b/paket-body-type-transformation-anad-analisis-paket-body-transformation-bundling-68gfks" target="_blank" rel="noopener" data-cta="bundle"><span class="tag">Paling lengkap · Rp499rb</span><b>Paket Body Type Transformation</b><small>Semua materi dalam satu akses + sesi konsultasi khusus.</small><span class="go">Ambil paket →</span></a>
+      <a href="https://aginggracefully.site/mulaidarisini/" target="_blank" rel="noopener" data-cta="mulai"><span class="tag free">Peta</span><b>📚 Mulai Dari Sini</b><small>Semua program dalam satu halaman.</small><span class="go">Lihat peta →</span></a>
+    </div>
+  </div>
+
+  <footer>
+    <p class="disclaimer">Konten bersifat edukasi dan tidak menggantikan pemeriksaan, diagnosis, atau terapi dari tenaga medis. Hasil setiap orang berbeda.</p>
+    <p>© dr. Metz · Gracefully Aging Series. Halaman ini untuk pembeli — mohon tidak disebarluaskan.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var NARA_URL='https://konektor.id/wa/aging-gracefully';
+  var SLUG='ebook_aging_gracefully';
+
+  /* tema */
+  var root=document.documentElement, tbtn=$('themeBtn');
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>';
+  function isDark(){var t=root.dataset.theme;return t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches}
+  function paint(){var d=isDark();tbtn.innerHTML=d?SUN:MOON;tbtn.setAttribute('aria-label',d?'Ganti ke mode terang':'Ganti ke mode gelap');document.querySelector('meta[name=theme-color]').content=d?'#1E1813':'#F6EFE4'}
+  tbtn.onclick=function(){var t=isDark()?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('gab:theme',t)}catch(e){}paint()};
+  paint();
+
+  /* tracking: Meta Pixel + Konektor (event sama di dua tempat) */
+  function track(name,params){
+    params=params||{};
+    var id='gab-'+name.toLowerCase()+'-'+Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+    try{ if(window.fbq) fbq('track',name,params,{eventID:id}); }catch(e){}
+    try{ if(typeof window.konektor==='function') konektor('track',name,Object.assign({event_id:id},params)); }catch(e){}
+  }
+  var qp=new URLSearchParams(location.search);
+  var KEEP=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
+
+  /* UTM ke link produk + AddToCart */
+  var OFFERS={ebook2:['Body Type Mapping',99000],webinar:['Webinar Gracefully Aging 12x',149000],challenge:['Challenge 14 Hari',149000],bundle:['Paket Body Type Transformation',499000]};
+  [].forEach.call(document.querySelectorAll('a[data-cta]'),function(a){
+    try{var u=new URL(a.href);u.searchParams.set('utm_source',SLUG);u.searchParams.set('utm_medium','landing_akses');u.searchParams.set('utm_campaign',a.dataset.cta);u.searchParams.set('utm_content','shelf');a.href=u.toString()}catch(e){}
+  });
+  var leadSent=false;
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-cta]'); if(!a) return;
+    var k=a.dataset.cta;
+    if(k==='tracker'){ if(!leadSent){leadSent=true;track('Lead',{lead_source:'beauty_tracker'});} return; }
+    var o=OFFERS[k]; if(o) track('AddToCart',{content_ids:[k],content_name:o[0],content_type:'product',value:o[1],currency:'IDR'});
+  });
+
+  /* form Nara → konektor.id/wa/aging-gracefully (k_* jadi custom field lead) */
+  var form=$('naraForm'), btn=$('naraBtn');
+  var started=false;
+  form.addEventListener('focusin',function(){ if(!started){started=true;try{konektor('track','FormStart',{form:'nara_akses'})}catch(e){}} });
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nama=$('fNama').value.trim().replace(/\s+/g,' ').slice(0,40);
+    var fokus=(form.querySelector('input[name=fokus]:checked')||{}).value||'';
+    var usia=(form.querySelector('input[name=usia]:checked')||{}).value||'';
+    $('eNama').textContent=nama.length<2?'Tulis nama panggilanmu dulu ya.':'';
+    $('eFokus').textContent=fokus?'':'Pilih satu yang paling ingin diperbaiki.';
+    if(nama.length<2){$('fNama').focus();return}
+    if(!fokus){form.querySelector('input[name=fokus]').focus();return}
+    var kp=new URLSearchParams({k_nama:nama,k_fokus:fokus,k_source:'landing_akses_ebook1',k_ebook:'aging_gracefully'});
+    if(usia) kp.set('k_usia',usia);
+    KEEP.forEach(function(k){ if(qp.get(k)) kp.set(k,qp.get(k)); });
+    if(!kp.get('utm_source')){kp.set('utm_source',SLUG);kp.set('utm_medium','landing_akses');kp.set('utm_campaign','nara_wa');}
+    track('Lead',{lead_source:'nara_form',fokus:fokus});
+    leadSent=true;
+    try{ localStorage.setItem('gab:nara',JSON.stringify({nama:nama,fokus:fokus,usia:usia})); }catch(err){}
+    btn.disabled=true; btn.lastChild.textContent='Membuka WhatsApp…';
+    var url=NARA_URL+'?'+kp.toString();
+    setTimeout(function(){ location.href=url; },350);
+    setTimeout(function(){ btn.disabled=false; btn.lastChild.textContent='Lanjut ke WhatsApp Nara'; },4000);
+  });
+  /* isi ulang jawaban terakhir */
+  try{ var s=JSON.parse(localStorage.getItem('gab:nara')||'null'); if(s){ $('fNama').value=s.nama||''; ['fokus','usia'].forEach(function(n){ var el=s[n]&&form.querySelector('input[name='+n+'][value="'+s[n]+'"]'); if(el) el.checked=true; }); } }catch(e){}
+
+  /* klik ke eBook dicatat di Konektor */
+  document.addEventListener('click',function(e){ var a=e.target.closest('a[data-go="ebook"]'); if(a){ try{konektor('track','OpenEbook',{target:a.getAttribute('href')})}catch(err){} } });
+})();
+</script>
+</body>
+</html>
