@@ -127,6 +127,13 @@ input[type=text]:focus{outline:2px solid var(--bark);outline-offset:1px;border-c
 .tag.free{color:var(--wa)}
 .shelf .go{margin-top:.4rem;font-weight:600;font-size:.85rem;color:var(--bark)}
 .shelf a.hl .go{color:var(--on-bark)}
+.pack{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1rem 1.05rem;margin:.4rem 0 1.4rem}
+.pack-list{display:grid;gap:.5rem;margin-top:.55rem}
+.pack-row{display:grid;grid-template-columns:2rem 1fr auto;gap:.6rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:.6rem .7rem}
+.pi{font-size:1.35rem;text-align:center}
+.pt b{display:block;font-size:.95rem;line-height:1.3}
+.pt small{display:block;font-size:.76rem;color:var(--ink-soft);line-height:1.35}
+.btn.sm{font-size:.82rem;padding:.55rem .85rem;white-space:nowrap}
 footer{max-width:var(--measure);margin:3rem auto 0;text-align:center;font-size:.8rem;color:var(--ink-soft)}
 </style>
 </head>
@@ -156,6 +163,14 @@ footer{max-width:var(--measure);margin:3rem auto 0;text-align:center;font-size:.
   </div>
 
   <div class="col">
+    <section class="pack" aria-label="Isi paket kamu">
+      <div class="kicker">Isi paket kamu</div>
+      <div class="pack-list">
+        <div class="pack-row"><span class="pi">📖</span><span class="pt"><b>eBook Interaktif</b><small>Gracefully Aging: Beautycode Biohacking</small></span><a class="btn sm" href="./" data-go="ebook">Buka</a></div>
+        <div class="pack-row"><span class="pi">🌙</span><span class="pt"><b>Bonus 1 · Deep Sleep</b><small>eBook PDF</small></span><a class="btn sm" href="https://drive.google.com/file/d/1OLy7gXOiSrHz7oJRIjKzCE9ihM5x2vDU/view?usp=sharing" target="_blank" rel="noopener" data-bonus="deep_sleep">⬇ Unduh PDF</a></div>
+        <div class="pack-row"><span class="pi">🧭</span><span class="pt"><b>Bonus 2 · Body Type Quiz</b><small><a href="https://www.canva.com/design/DAG_fsyitGs/dIuDICesuGxT3PzhObn8UQ/view" target="_blank" rel="noopener" data-bonus="bodytype_quiz_view">Buka di Canva</a></small></span><a class="btn sm" href="https://drive.google.com/file/d/1MOqmCOjFRXuUfZQH-U3fJ5hpRYp6QrTj/view" target="_blank" rel="noopener" data-bonus="bodytype_quiz_pdf">⬇ Unduh PDF</a></div>
+      </div>
+    </section>
     <p class="disclaimer"><strong>Catatan kesehatan:</strong> Isi eBook dan jawaban asisten bersifat edukasi, bukan diagnosis atau resep pribadi. Jika kamu punya kondisi medis, sedang hamil/menyusui, atau rutin minum obat, konsultasikan dulu dengan dokter sebelum mengubah pola makan, puasa, olahraga, atau perawatan.</p>
 
     <h2>Isi buku</h2>
