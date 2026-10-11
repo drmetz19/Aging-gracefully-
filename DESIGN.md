@@ -181,6 +181,7 @@ Aturan: maksimal 1 CTA per batas bab, dan penawaran utama (`.offer`) hanya sekal
 
 - Semua link CTA otomatis diberi `utm_source=ebook_<slug-buku>&utm_medium=webbook&utm_campaign=<produk>&utm_content=<posisi>`.
 - Audiens di Ads Manager (HKU 1 & MJO): `Ebook <KODE> · 1 ViewContent / 2 Lead / 3 AddToCart / 4 Purchase`.
+- **Filter audiens pakai URL, bukan parameter.** Pixel ini kena pembatasan data kesehatan Meta, jadi `content_category`, `content_name`, dan parameter custom dibuang (yang tersisa hanya `content_ids`, `content_type`, `value`, `currency`). Rule audiens 1–3: `event = <Event>` **dan** `url i_contains <domain-buku>.vercel.app`. Purchase cukup `event = Purchase`.
 
 ---
 
