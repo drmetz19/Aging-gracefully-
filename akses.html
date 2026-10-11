@@ -174,7 +174,10 @@ footer{max-width:var(--measure);margin:3rem auto 0;text-align:center;font-size:.
     <div class="tools">
       <a class="tool" href="./#kuis" data-go="ebook"><span class="kicker">Alat bantu</span><b>Cek Kualitas Tidur</b><small>10 pertanyaan, skor langsung keluar.</small></a>
       <a class="tool" href="./#tracker-12" data-go="ebook"><span class="kicker">Alat bantu</span><b>Tracker 12 Minggu</b><small>Centang Power of 3 Action tiap minggu.</small></a>
+      <a class="tool" href="https://drive.google.com/file/d/1OLy7gXOiSrHz7oJRIjKzCE9ihM5x2vDU/view?usp=sharing" target="_blank" rel="noopener" data-bonus="deep_sleep"><span class="kicker">Bonus 1</span><b>🌙 eBook Deep Sleep</b><small>Pendalaman pilar tidur — buka di Google Drive.</small></a>
+      <a class="tool" href="https://www.canva.com/design/DAG_fsyitGs/dIuDICesuGxT3PzhObn8UQ/view" target="_blank" rel="noopener" data-bonus="bodytype_quiz_view"><span class="kicker">Bonus 2</span><b>🧭 Body Type Quiz</b><small>Kenali body type-mu. <span class="dlx">Versi PDF juga tersedia ↓</span></small></a>
     </div>
+    <p class="sub" style="margin-top:.7rem;font-size:.85rem"><a href="https://drive.google.com/file/d/1MOqmCOjFRXuUfZQH-U3fJ5hpRYp6QrTj/view" target="_blank" rel="noopener" data-bonus="bodytype_quiz_pdf">⬇ Download Body Type Quiz (PDF)</a></p>
 
     <section class="nara" id="nara" aria-labelledby="naraTitle">
       <div class="nara-head">
@@ -299,6 +302,7 @@ footer{max-width:var(--measure);margin:3rem auto 0;text-align:center;font-size:.
   /* isi ulang jawaban terakhir */
   try{ var s=JSON.parse(localStorage.getItem('gab:nara')||'null'); if(s){ $('fNama').value=s.nama||''; ['fokus','usia'].forEach(function(n){ var el=s[n]&&form.querySelector('input[name='+n+'][value="'+s[n]+'"]'); if(el) el.checked=true; }); } }catch(e){}
 
+  document.addEventListener('click',function(e){ var b=e.target.closest('a[data-bonus]'); if(b){ try{konektor('track','BonusOpen',{bonus:b.dataset.bonus})}catch(err){} } });
   /* klik ke eBook dicatat di Konektor */
   document.addEventListener('click',function(e){ var a=e.target.closest('a[data-go="ebook"]'); if(a){ try{konektor('track','OpenEbook',{target:a.getAttribute('href')})}catch(err){} } });
 })();
